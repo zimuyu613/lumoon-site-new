@@ -91,7 +91,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="glass-card absolute -bottom-8 -left-6 hidden rounded-3xl px-5 py-4 md:block light:border-slate-300 light:bg-white/96">
+            <div className="glass-card absolute -bottom-8 left-0 right-0 hidden rounded-3xl px-5 py-4 md:block light:border-slate-300 light:bg-white/96">
               <div className="text-xs uppercase tracking-[0.2em] text-white/55 light:text-slate-600">
                 NFC Flow
               </div>
@@ -195,7 +195,7 @@ export default function Home() {
       </section>
 
       <section className="py-28">
-        <div className="container-shell grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+        <div className="container-shell grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-end">
           <div>
               <p className="text-sm uppercase tracking-[0.25em] text-white/48 light:text-slate-600">
               Technology

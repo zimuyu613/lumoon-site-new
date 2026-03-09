@@ -230,13 +230,27 @@ html.light .grid-glow::before {
 
 html.light .glass-card {
   background: var(--card);
-  border: 1px solid var(--card-border);
-  box-shadow: 0 18px 48px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.85),
+    inset 0 0 0 1px rgba(15, 23, 42, 0.04),
+    0 18px 48px rgba(15, 23, 42, 0.08);
 }
 
 html.light .glass-card::before,
 html.light .glass-card::after {
-  display: none;
+  display: block;
+}
+
+html.light .glass-card::before {
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.9), transparent);
+}
+
+html.light .glass-card::after {
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.52),
+    0 8px 24px rgba(148, 163, 184, 0.12);
+  opacity: 1;
 }
 
 .card-orb {
@@ -271,38 +285,62 @@ html.light .hover-lift:hover {
 }
 
 html.light .btn-primary {
-  background: linear-gradient(135deg, #0f172a 0%, #1d4ed8 52%, #4f46e5 100%);
+  border: 1px solid rgba(255, 255, 255, 0.58);
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.22), transparent 42%),
+    linear-gradient(135deg, #12305f 0%, #1d4ed8 52%, #4f46e5 100%);
   color: #f8fafc;
-  box-shadow: 0 18px 42px rgba(29, 78, 216, 0.24);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.26),
+    0 18px 42px rgba(29, 78, 216, 0.24);
 }
 
 html.light .btn-primary:hover {
-  box-shadow: 0 22px 46px rgba(29, 78, 216, 0.28);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.3),
+    0 22px 46px rgba(29, 78, 216, 0.28);
 }
 
 html.light .btn-secondary {
-  border-color: rgba(15, 23, 42, 0.12);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(241, 245, 249, 0.96));
+  border-color: rgba(255, 255, 255, 0.78);
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.92), transparent 48%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(241, 245, 249, 0.82));
   color: #0f172a;
-  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.88),
+    inset 0 0 0 1px rgba(15, 23, 42, 0.04),
+    0 10px 24px rgba(15, 23, 42, 0.08);
 }
 
 html.light .btn-secondary:hover {
   border-color: rgba(79, 70, 229, 0.18);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(248, 250, 252, 1));
-  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.1);
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.96), transparent 48%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(248, 250, 252, 0.92));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.92),
+    inset 0 0 0 1px rgba(79, 70, 229, 0.06),
+    0 14px 30px rgba(15, 23, 42, 0.1);
 }
 
 html.light .btn-control {
-  border-color: rgba(15, 23, 42, 0.12);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(241, 245, 249, 0.96));
+  border-color: rgba(255, 255, 255, 0.74);
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.86), transparent 46%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.68), rgba(241, 245, 249, 0.82));
   color: #0f172a;
-  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.86),
+    inset 0 0 0 1px rgba(15, 23, 42, 0.04),
+    0 8px 24px rgba(15, 23, 42, 0.08);
 }
 
 html.light .btn-control:hover {
   border-color: rgba(79, 70, 229, 0.18);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(248, 250, 252, 1));
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.92), transparent 46%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(248, 250, 252, 0.9));
 }
 
 @media (max-width: 768px) {
