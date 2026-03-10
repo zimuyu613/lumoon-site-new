@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -8,7 +8,8 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold text-white light:text-slate-950">LUMOON</h3>
             <p className="mt-4 max-w-md text-sm leading-7 text-white/68 light:text-slate-600">
-              以 NFC 与数字身份技术为核心，构建年轻化、科技感与沉浸式兼具的品牌收藏体验。
+              LUMOON 以原创潮玩设计与数字确权体验为核心，让每一件产品拥有更清晰可信的身份记录，
+              让收藏更真实、更安心、更有参与感。
             </p>
           </div>
 
@@ -19,21 +20,26 @@ export default function Footer() {
             <Link href="/terms" className="transition hover:text-white light:hover:text-slate-950">
               用户协议
             </Link>
-            <Link href="/contact" className="transition hover:text-white light:hover:text-slate-950">
+            <Link href="#contact" className="transition hover:text-white light:hover:text-slate-950">
               联系我们
             </Link>
+            <span>公众号 / 小程序</span>
           </div>
 
           <div className="text-sm text-white/64 light:text-slate-600">
-            <p>微信公众号 / 小程序码</p>
+            <p>
+              本网站所展示的信息仅用于品牌介绍、产品展示、数字确权、收藏记录与用户服务，
+              不构成任何投资建议或交易承诺。
+            </p>
             <p className="mt-3">商务合作：hello@lumoon.com</p>
           </div>
         </div>
 
         <div className="mt-8 border-t border-white/10 pt-6 text-sm text-white/42 light:border-slate-300/70 light:text-slate-500">
-          © 2026 LUMOON. All rights reserved.
+          Copyright 2026 LUMOON. All rights reserved.
         </div>
       </div>
     </footer>
   );
 }
+

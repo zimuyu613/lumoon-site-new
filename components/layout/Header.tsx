@@ -4,13 +4,12 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const navItems = [
-  { label: "首页", href: "/" },
-  { label: "品牌故事", href: "/about" },
-  { label: "产品中心", href: "/products" },
-  { label: "NFC 验真", href: "/verify" },
-  { label: "技术介绍", href: "/technology" },
-  { label: "新闻动态", href: "/news" },
-  { label: "联系我们", href: "/contact" },
+  { label: "首页", href: "#home" },
+  { label: "品牌故事", href: "#brand-story" },
+  { label: "产品中心", href: "#products" },
+  { label: "数字确权", href: "#digital-rights" },
+  { label: "新闻动态", href: "#news" },
+  { label: "联系我们", href: "#contact" },
 ];
 
 export default function Header() {
