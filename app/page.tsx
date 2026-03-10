@@ -89,7 +89,7 @@ export default function Home() {
               <a href="#products" className="btn-base btn-primary h-12 px-7 text-sm">
                 探索产品
               </a>
-              <a href="#brand-story" className="btn-base btn-primary btn-darkglass h-12 px-7 text-sm font-medium">
+              <a href="/about" className="btn-base btn-primary h-12 px-7 text-sm font-medium">
                 了解更多
               </a>
             </div>
@@ -273,7 +273,7 @@ export default function Home() {
                     我们用原创设计表达角色个性，也用更完整的收藏记录方式让每一次相遇更有意义。
                   </p>
                 </div>
-                <a href="#contact" className="btn-base btn-secondary mt-8 h-11 px-5 text-sm font-medium">
+                <a href="/about" className="btn-base btn-secondary mt-8 h-11 px-5 text-sm font-medium">
                   了解品牌故事
                 </a>
               </div>
@@ -333,7 +333,7 @@ export default function Home() {
                 <a href="#contact" className="btn-base btn-primary h-12 px-6 text-sm">
                   联系我们
                 </a>
-                <a href="#news" className="btn-base btn-primary btn-darkglass h-12 px-6 text-sm font-medium">
+                <a href="#news" className="btn-base btn-primary h-12 px-6 text-sm font-medium">
                   关注品牌动态
                 </a>
               </div>
